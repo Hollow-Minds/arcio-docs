@@ -17,7 +17,7 @@ Arcio operates on binary signals (1/0). Sigil Matrix blocks provide named logic 
 
 ## Sigils (Logic gates)
 
-![](./assets/sigilspage.png)
+![](/assets/sigilspage.png)
 
 - Union Sigil: AND
 - Inclusion Sigil: OR
