@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   srcDir: "docs",
-  base: "https://hollow-minds.github.io/arcio-docs/",
+  base: "/arcio-docs/",
   title: "Arcio",
   description: "A magical Hytale automation mod",
   themeConfig: {
