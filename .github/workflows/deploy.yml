@@ -47,10 +47,15 @@ jobs:
         run: pnpm install # or pnpm install / yarn install / bun install
       - name: Build with VitePress
         run: pnpm run build # or pnpm docs:build / yarn docs:build / bun run docs:build
+      - name: Move build to repository root
+        run: |
+          # Copy the built site files into the repository root
+          # This will overwrite files with the same name in the root.
+          cp -a .vitepress/dist/. .
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .vitepress/dist
+          path: .
 
   # Deployment job
   deploy:
