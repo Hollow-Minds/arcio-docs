@@ -7,7 +7,7 @@ hero:
   text: "A magical Hytale automation mod"
   tagline: You don't need to be a wizard to build complex mana-logic systems.
   image:
-    src: ./assets/shard_catalyst_banner.png
+    src: /public/shard_catalyst_banner.png
   actions:
     - theme: brand
       text: Getting Started
