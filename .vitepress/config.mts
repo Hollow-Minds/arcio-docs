@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { itemData } from './src/data/items'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -8,9 +9,13 @@ export default defineConfig({
   description: "A magical Hytale automation mod",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    search: {
+      provider: 'local'
+    },
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Guide', link: '/guide/getting-started' },
+      { text: 'Items', link: '/item/' },
       { text: 'API', link: '/api/' }
     ],
 
@@ -35,6 +40,10 @@ export default defineConfig({
           text: '📚 API Documentation'
         }
       ],
+      '/item/': itemData.filter(item => !item.native).map(item => ({
+        text: item.name,
+        link: `/item/${item.uri}`
+      })),
     },
 
 

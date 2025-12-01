@@ -1,5 +1,15 @@
 {
     "yaml.schemas": {
         "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml"
+    },
+    // Tell the Vue language server to treat embedded markdown code blocks as Vue
+    "vue.server.includeLanguages": [
+        "vue",
+        "markdown"
+    ],
+    "volar.takeOverMode.enabled": true,
+    "files.associations": {
+        "*.md": "markdown",
+        "*.mdx": "markdown"
     }
 }
