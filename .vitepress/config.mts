@@ -48,12 +48,12 @@ export default defineConfig({
 
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/Hollow-Minds/arcio' },
+      { icon: 'github', link: 'https://github.com/Void-Bond/arcio' },
       { icon: 'discord', link: 'https://discord.gg/8tX9us8XBN' },
     ],
     footer: {
       message: "Made with ✨",
-      copyright: "Copyright © 2025 Hollow Minds"
+      copyright: "Copyright © 2025 Void Bond"
     }
   }
 })
